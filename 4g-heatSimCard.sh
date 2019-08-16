@@ -1,7 +1,7 @@
 #!/bin/sh
 
 
-i=899 # 0:start,1:stop(低电平关闭)
+i=902 # 0:start,1:stop(低电平关闭)
 
 if [ ! -d "/sys/class/gpio/gpio$i" ];then
     echo $i > /sys/class/gpio/export
