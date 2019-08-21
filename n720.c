@@ -418,7 +418,7 @@ int TCP_ClientConnct(int *fd,char *addrpwd)
                     j=0;
                     do{
                         j++;
-                        serial_write(*fd, "AT+CGATT=1", strlen("AT+CGATT=1"), &tv);
+                        serial_write(*fd, "AT+CGATT=1\r", strlen("AT+CGATT=1\r"), &tv);
                         is_ok = wait_ok_string(*fd, 1);
                         if (is_ok != 1) {
                             sleep(1);
