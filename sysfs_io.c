@@ -170,10 +170,10 @@ void N720_NonheatSimCard()
 void N720_Reset()
 {
     // gpio_unexport(pin);
-    gpio_export(903);
-    gpio_write(903,0);
+    gpio_export(901);
+    gpio_write(901,0);
     sleep(2);
-    gpio_write(903,1);
+    gpio_write(901,1);
     sleep(8);
 }
 //读取N720状态，1表示未插入N720模块或未开N720主电源
